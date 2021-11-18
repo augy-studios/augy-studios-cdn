@@ -1,2 +1,2 @@
-# augy-studios-cdn
-File directory for Augy Studios website and beyond
+# augy-studios-rickroll
+Rickroll page
