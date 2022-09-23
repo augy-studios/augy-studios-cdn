@@ -4,25 +4,34 @@
     <meta charset="utf-8">
     <title>Just kidding xd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script>
-        setTimeout(function ()
-        {
-            document.getElementById("textChange").innerHTML="Too late... ehehe";
-        }, 10000)
-    </script>
     
-    <script>
+    <!-- <script>
         setTimeout(function ()
         {
             window.location = "https://www.youtube.com/watch?v=9SPWaK9WzhU";
         }, 12000)
-    </script>
+    </script> -->
 
     <script>
         function playNggyu() {
         var audio = document.getElementById("audio");
         audio.play();
+        }
+    </script>
+
+    <script>
+        // function isPlaying(audio) { return !audio.paused; }
+        if (audio.paused)
+        {
+            setTimeout(function ()
+            {
+                document.getElementById("textChange").innerHTML="Too late... ehehe";
+
+                setTimeout(function ()
+                {
+                    window.location = "https://www.youtube.com/watch?v=9SPWaK9WzhU";
+                }, 2000)
+            }, 10000)
         }
     </script>
 
@@ -87,7 +96,7 @@
 </head>
 <body>
     <h1>Just kidding xd</h1>
-    <p id="textChange">Click <a onclick="playNggyu()">here</a> to save yourself!</p>
+    <p id="textChange"><a onclick="playNggyu()">Click here to save yourself!</a></p>
     <audio id="audio" src="https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"></audio>
 </body>
 </html>
