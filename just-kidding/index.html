@@ -8,8 +8,15 @@
     <script>
         setTimeout(function ()
         {
-            window.location = "https://www.youtube.com/watch?v=9SPWaK9WzhU";
-        }, 3000)
+            audio.play("https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3");
+        }, 1000)
+    </script>
+
+    <script>
+        function playCSDL() {
+        var audio = document.getElementById("audio");
+        audio.play();
+        }
     </script>
 
 	<!-- Google Analytics & Google Ads -->
