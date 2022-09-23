@@ -8,11 +8,22 @@
     <script>
         setTimeout(function ()
         {
-            var audio = new Audio("https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3");
-            audio.play();
-            audio.autoplay="true";
-            audio.muted="muted";
-        }, 1000)
+            document.getElementById("textChange").innerHTML="Too late... ehehe";
+        }, 10000)
+    </script>
+    
+    <script>
+        setTimeout(function ()
+        {
+            window.location = "https://www.youtube.com/watch?v=9SPWaK9WzhU";
+        }, 12000)
+    </script>
+
+    <script>
+        function playNggyu() {
+        var audio = document.getElementById("audio");
+        audio.play();
+        }
     </script>
 
 	<!-- Google Analytics & Google Ads -->
@@ -76,7 +87,8 @@
 </head>
 <body>
     <h1>Just kidding xd</h1>
-    <p>lol u died</p>
+    <p id="textChange">Click <a onclick="playNggyu()">here</a> to save yourself!</p>
+    <audio id="audio" src="https://cdn.augystudios.com/media/music/nggyu-piano-lt.mp3"></audio>
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
