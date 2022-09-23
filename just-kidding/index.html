@@ -30,10 +30,15 @@
                 }, 2000)
             }, 10000);
 
-        if (document.getElementById("textChange").innerHTML == "Too late... ehehe")
+        setTimeout(function ()
         {
-            clearTimeout(mainTimeout);
-        }
+            if (!document.getElementById("textChange").innerHTML == "Too late... ehehe")
+            {
+                clearTimeout(mainTimeout);
+            }
+        }, 10000);
+
+        
     </script>
 
 	<!-- Google Analytics & Google Ads -->
