@@ -20,10 +20,7 @@
     </script>
 
     <script>
-        // function isPlaying(audio) { return !audio.paused; }
-        if (document.getElementById("textChange").clicked == false)
-        {
-            setTimeout(function ()
+        const mainTimeout = setTimeout(function ()
             {
                 document.getElementById("textChange").innerHTML="Too late... ehehe";
 
@@ -31,7 +28,11 @@
                 {
                     window.location = "https://www.youtube.com/watch?v=9SPWaK9WzhU";
                 }, 2000)
-            }, 10000)
+            }, 10000);
+
+        if (document.getElementById("textChange").innerHTML == "Too late... ehehe")
+        {
+            clearTimeout(mainTimeout);
         }
     </script>
 
