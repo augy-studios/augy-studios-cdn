@@ -17,9 +17,21 @@
         var audio = document.getElementById("audio");
         audio.play();
         }
-    </script>
 
-    <script>
+        if (!audio.paused)
+        {
+            document.getElementById("textChange").innerHTML="You're saved! 🎉";
+        }
+
+        var secs = 0;
+        do {
+            //uhh wut...
+            secs++;
+        }
+        while (
+            secs < 10 || !document.getElementById("textChange").innerHTML == "Too late... ehehe"
+        );
+    
         const mainTimeout = setTimeout(function ()
             {
                 document.getElementById("textChange").innerHTML="Too late... ehehe";
@@ -37,8 +49,6 @@
                 clearTimeout(mainTimeout);
             }
         }, 10000);
-
-        
     </script>
 
 	<!-- Google Analytics & Google Ads -->
