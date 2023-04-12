@@ -1,4 +1,5 @@
 # Pomodoro Timer Commands (Mod Only)
+Credits to [Mohamed Tayeh](https://github.com/mohamed-tayeh)
 
 - `!timer start`: begins the timer with the defauly configuration
 - `!timer goal 10`: changes the timer goal to 10
@@ -15,6 +16,7 @@
 ---
 
 # Task List Commands
+Credits to [RyanPython](https://twitch.tv/RyanPython)
 
 ## Aliases
 
